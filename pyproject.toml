@@ -3,7 +3,7 @@ name = "shop"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Alexey Kultaev",email = "kav7270@gmail.com"}
+    { name = "Alexey Kultaev", email = "kav7270@gmail.com" }
 ]
 readme = "README.md"
 requires-python = ">=3.12"
@@ -14,6 +14,7 @@ dependencies = [
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
 
 [tool.poetry.group.lint.dependencies]
 flake8 = "^7.3.0"
@@ -26,12 +27,12 @@ isort = "^6.0.1"
 pytest = "^8.4.1"
 pytest-cov = "^6.2.1"
 
+
 [tool.mypy]
 disallow_untyped_defs = true
 no_implicit_optional = true
 warn_return_any = true
 exclude = 'venv'
-
 
 
 [tool.black]
@@ -53,6 +54,7 @@ exclude = '''
                      # в корне проекта
 )
 '''
+
 
 [tool.isort]
 # максимальная длина строки
